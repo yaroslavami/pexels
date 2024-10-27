@@ -4,9 +4,12 @@
     font-family: 'Open Sans';
 }
 body{
-    background-image: url("./pexels.avif");
+    background-image: 
+        linear-gradient(rgba(159, 218, 255, 0.682), rgba(159, 218, 231, 0.682)), 
+        url("./pexels.avif");
     background-size: cover;
     overflow: hidden;
+    background-blend-mode: multiply;   
 }
 .header{
     display: flex;
@@ -86,4 +89,8 @@ body{
     font-size: 15px;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+}
+.user__button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
